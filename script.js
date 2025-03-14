@@ -1,6 +1,6 @@
 function convertToRoman(num) {
-  	const obj = {
-      'M': 1000,
+    const obj = {
+        'M': 1000,
         'CM': 900,
         'D': 500,
         'CD': 400,
@@ -14,18 +14,19 @@ function convertToRoman(num) {
         'IV': 4,
         'I': 1
     };
-  //your code here
-	let roman = "",
-		Object.entries(obj).forEach(([symbol, value] )) => {
-		  
-		   while(num >= value)
-			   {
-				   roman += symbol;
-				   num -= value;
-			   }
-		});
+
+    let roman = "";
+    Object.entries(obj).forEach(([symbol, value]) => {
+        while(num >= value) {
+            roman += symbol;
+            num -= value;
+        }
+    });
+
     return roman;
 }
+
+console.log(convertToRoman(36));
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
  console.log(convertToRoman(36));
