@@ -16,14 +16,14 @@ function convertToRoman(num) {
     };
   //your code here
 	let roman = "",
-		symbol.forEach((item)) => {
+		symbols.forEach((item)) => {
 		   const [symbol, value] = item;
 		   while(num >= value)
 			   {
 				   roman += symbol;
 				   num -= value;
 			   }
-		})
+		});
     return roman;
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
